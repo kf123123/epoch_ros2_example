@@ -9,27 +9,27 @@ def generate_launch_description():
 
     ld = launch.LaunchDescription()
 
-    pkg_name = "ros2_example"
+    pkg_name = "service_example"
     pkg_share_path = get_package_share_directory(pkg_name)
 
     namespace='epoch'
     ld.add_action(ComposableNodeContainer(
         namespace='',
-        name=namespace+'_service_server_example',
+        name=namespace+'_service_client_example',
         package='rclcpp_components',
         executable='component_container_mt',
         composable_node_descriptions=[
             ComposableNode(
                 package=pkg_name,
-                plugin='ros2_examples::ServiceServerExample',
+                plugin='service_example::ServiceClientExample',
                 namespace=namespace,
-                name='service_server_example',
+                name='service_client_example',
                 # parameters=[
-                #     pkg_share_path + '/config/service_server_example.yaml',
+                #     pkg_share_path + '/config/service_client_example.yaml',
                 # ],
                 remappings=[
                     # services
-                    ("~/set_bool_in", "~/set_bool"),
+                    ("~/set_bool_out", "/epoch/service_server_example/set_bool"),
                 ],
             )
         ],
