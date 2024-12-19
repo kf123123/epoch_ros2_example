@@ -1,0 +1,24 @@
+/workspaces/vscode_test/install/ros2_example/lib/libpublisher.so
+/workspaces/vscode_test/install/ros2_example/lib/libsubscriber.so
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/publisher_node.launch.py
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/subscriber_node.launch.py
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/__pycache__/publisher_node.launch copy.cpython-310.pyc
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/__pycache__/sublisher_node.launch.cpython-310.pyc
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/__pycache__/subscriber_node.launch.cpython-310.pyc
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/launch/__pycache__/publisher_node.launch.cpython-310.pyc
+/workspaces/vscode_test/install/ros2_example/share/ament_index/resource_index/package_run_dependencies/ros2_example
+/workspaces/vscode_test/install/ros2_example/share/ament_index/resource_index/parent_prefix_path/ros2_example
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/environment/ament_prefix_path.sh
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/environment/ament_prefix_path.dsv
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/environment/path.sh
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/environment/path.dsv
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/local_setup.bash
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/local_setup.sh
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/local_setup.zsh
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/local_setup.dsv
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/package.dsv
+/workspaces/vscode_test/install/ros2_example/share/ament_index/resource_index/packages/ros2_example
+/workspaces/vscode_test/install/ros2_example/share/ament_index/resource_index/rclcpp_components/ros2_example
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/cmake/ros2_exampleConfig.cmake
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/cmake/ros2_exampleConfig-version.cmake
+/workspaces/vscode_test/install/ros2_example/share/ros2_example/package.xml

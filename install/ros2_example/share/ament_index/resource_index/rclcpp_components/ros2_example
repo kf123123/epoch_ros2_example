@@ -1,0 +1,8 @@
+PLUGIN;lib/libpublisher.so
+ros2_examples::PublisherExample;lib/libpublisher.so
+EXECUTABLE;lib/libpublisher.so
+publisher;lib/libpublisher.so
+PLUGIN;lib/libsubscriber.so
+ros2_examples::SubscriberExample;lib/libsubscriber.so
+EXECUTABLE;lib/libsubscriber.so
+subscriber;lib/libsubscriber.so
