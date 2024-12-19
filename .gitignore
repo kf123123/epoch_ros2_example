@@ -1,5 +1,6 @@
-.vscode
 build
-log
 install
+log
+.cache
 __pycache__
+
