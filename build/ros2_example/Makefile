@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/vscode_test/src/ros2_example
+CMAKE_SOURCE_DIR = /home/lkf/Desktop/epoch_ros2_example/src/ros2_example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/vscode_test/build/ros2_example
+CMAKE_BINARY_DIR = /home/lkf/Desktop/epoch_ros2_example/build/ros2_example
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/vscode_test/build/ros2_example/CMakeFiles /workspaces/vscode_test/build/ros2_example//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lkf/Desktop/epoch_ros2_example/build/ros2_example/CMakeFiles /home/lkf/Desktop/epoch_ros2_example/build/ros2_example//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/vscode_test/build/ros2_example/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lkf/Desktop/epoch_ros2_example/build/ros2_example/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,6 +223,32 @@ subscriber/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber.dir/build.make CMakeFiles/subscriber.dir/build
 .PHONY : subscriber/fast
 
+#=============================================================================
+# Target rules for targets named service_client
+
+# Build rule for target.
+service_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 service_client
+.PHONY : service_client
+
+# fast build rule for target.
+service_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_client.dir/build.make CMakeFiles/service_client.dir/build
+.PHONY : service_client/fast
+
+#=============================================================================
+# Target rules for targets named service_server
+
+# Build rule for target.
+service_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 service_server
+.PHONY : service_server
+
+# fast build rule for target.
+service_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/build
+.PHONY : service_server/fast
+
 src/publisher_node.o: src/publisher_node.cpp.o
 .PHONY : src/publisher_node.o
 
@@ -246,6 +272,54 @@ src/publisher_node.s: src/publisher_node.cpp.s
 src/publisher_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher_node.cpp.s
 .PHONY : src/publisher_node.cpp.s
+
+src/service_client_example.o: src/service_client_example.cpp.o
+.PHONY : src/service_client_example.o
+
+# target to build an object file
+src/service_client_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_client.dir/build.make CMakeFiles/service_client.dir/src/service_client_example.cpp.o
+.PHONY : src/service_client_example.cpp.o
+
+src/service_client_example.i: src/service_client_example.cpp.i
+.PHONY : src/service_client_example.i
+
+# target to preprocess a source file
+src/service_client_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_client.dir/build.make CMakeFiles/service_client.dir/src/service_client_example.cpp.i
+.PHONY : src/service_client_example.cpp.i
+
+src/service_client_example.s: src/service_client_example.cpp.s
+.PHONY : src/service_client_example.s
+
+# target to generate assembly for a file
+src/service_client_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_client.dir/build.make CMakeFiles/service_client.dir/src/service_client_example.cpp.s
+.PHONY : src/service_client_example.cpp.s
+
+src/service_server_example.o: src/service_server_example.cpp.o
+.PHONY : src/service_server_example.o
+
+# target to build an object file
+src/service_server_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server_example.cpp.o
+.PHONY : src/service_server_example.cpp.o
+
+src/service_server_example.i: src/service_server_example.cpp.i
+.PHONY : src/service_server_example.i
+
+# target to preprocess a source file
+src/service_server_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server_example.cpp.i
+.PHONY : src/service_server_example.cpp.i
+
+src/service_server_example.s: src/service_server_example.cpp.s
+.PHONY : src/service_server_example.s
+
+# target to generate assembly for a file
+src/service_server_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server_example.cpp.s
+.PHONY : src/service_server_example.cpp.s
 
 src/subscriber_node.o: src/subscriber_node.cpp.o
 .PHONY : src/subscriber_node.o
@@ -287,10 +361,18 @@ help:
 	@echo "... ros2_example_uninstall"
 	@echo "... uninstall"
 	@echo "... publisher"
+	@echo "... service_client"
+	@echo "... service_server"
 	@echo "... subscriber"
 	@echo "... src/publisher_node.o"
 	@echo "... src/publisher_node.i"
 	@echo "... src/publisher_node.s"
+	@echo "... src/service_client_example.o"
+	@echo "... src/service_client_example.i"
+	@echo "... src/service_client_example.s"
+	@echo "... src/service_server_example.o"
+	@echo "... src/service_server_example.i"
+	@echo "... src/service_server_example.s"
 	@echo "... src/subscriber_node.o"
 	@echo "... src/subscriber_node.i"
 	@echo "... src/subscriber_node.s"

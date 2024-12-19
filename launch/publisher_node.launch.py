@@ -12,7 +12,7 @@ def generate_launch_description():
     pkg_name = "ros2_example"
     pkg_share_path = get_package_share_directory(pkg_name)
 
-    namespace='hello'
+    namespace='epoch'
     ld.add_action(ComposableNodeContainer(
         namespace='',
         name=namespace+'_publisher_example',

@@ -1,6 +1,0 @@
-Invoking command in '/workspaces/vscode_test/build/ros2_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/vscode_test/src/ros2_example -DCMAKE_INSTALL_PREFIX=/workspaces/vscode_test/install/ros2_example
-Invoked command in '/workspaces/vscode_test/build/ros2_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/vscode_test/src/ros2_example -DCMAKE_INSTALL_PREFIX=/workspaces/vscode_test/install/ros2_example
-Invoking command in '/workspaces/vscode_test/build/ros2_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/vscode_test/build/ros2_example -- -j16 -l16
-Invoked command in '/workspaces/vscode_test/build/ros2_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/vscode_test/build/ros2_example -- -j16 -l16
-Invoking command in '/workspaces/vscode_test/build/ros2_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/vscode_test/build/ros2_example
-Invoked command in '/workspaces/vscode_test/build/ros2_example' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/vscode_test/build/ros2_example

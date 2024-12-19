@@ -6,3 +6,11 @@ PLUGIN;lib/libsubscriber.so
 ros2_examples::SubscriberExample;lib/libsubscriber.so
 EXECUTABLE;lib/libsubscriber.so
 subscriber;lib/libsubscriber.so
+PLUGIN;lib/libservice_client.so
+ros2_examples::ServiceClientExample;lib/libservice_client.so
+EXECUTABLE;lib/libservice_client.so
+service_client;lib/libservice_client.so
+PLUGIN;lib/libservice_server.so
+ros2_examples::ServiceServerExample;lib/libservice_server.so
+EXECUTABLE;lib/libservice_server.so
+service_server;lib/libservice_server.so

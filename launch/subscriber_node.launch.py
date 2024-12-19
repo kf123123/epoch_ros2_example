@@ -12,7 +12,7 @@ def generate_launch_description():
     pkg_name = "ros2_example"
     pkg_share_path = get_package_share_directory(pkg_name)
 
-    namespace='hello'
+    namespace='epoch'
     ld.add_action(ComposableNodeContainer(
         namespace='',
         name=namespace+'_subscriber_example',
@@ -29,7 +29,7 @@ def generate_launch_description():
                 # ],
                 remappings=[
                     # topics
-                    ("~/topic_subscriber", "/hello/publisher_/topic_publisher_out"),
+                    ("~/topic_subscriber", "/epoch/publisher_/topic_publisher_out"),
                    
                 ],
             )
