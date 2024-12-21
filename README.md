@@ -1,8 +1,10 @@
-sudo apt-get install ros-humble-std-srvs
 
-rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
 
-sudo apt update
-sudo apt install ros-humble-tf2-ros ros-humble-tf2-geometry-msgs
+# 仅仅针对ros2编写的模版（全部用组件封装）
 
-ros2 param set /epoch/publisher_ b 30
+## 功能列表
+1. 发布订阅
+2. 服务
+3. 自定义接口
+4. 配备参数， 支持从config配置（注意命名空间和节点名）
+5. 支持快速启动
