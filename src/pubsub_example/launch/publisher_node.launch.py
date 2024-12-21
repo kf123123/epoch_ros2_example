@@ -25,9 +25,9 @@ def generate_launch_description():
                 plugin='pubsub_example::PublisherExample',
                 namespace=namespace,
                 name='publisher_',
- #               parameters=[
- #                 pkg_share_path + '/config/publisher_example.yaml',
- #               ],
+               parameters=[
+                 pkg_share_path + '/config/publisher_example.yaml',
+               ],
                 remappings=[
                     # topics
                     #/前一个是被映射的对象，后一个是映射的对象/#

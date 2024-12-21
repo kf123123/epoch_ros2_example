@@ -2,6 +2,7 @@
 
 #include <std_msgs/msg/string.hpp>
 
+#include "interfaces/msg/num.hpp"
 
 using namespace std::chrono_literals;
 
@@ -20,10 +21,10 @@ namespace pubsub_example
   private:
     // | ----------------------- subscribers ---------------------- |
 
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_;
+    rclcpp::Subscription<interfaces::msg::Num>::SharedPtr subscriber_;
     // | ------------------------- methods ------------------------ |
     
-    void callback(const std_msgs::msg::String::SharedPtr msg);
+    void callback(const interfaces::msg::Num::SharedPtr msg);
 
   };
 
@@ -36,7 +37,7 @@ namespace pubsub_example
 
     RCLCPP_INFO(get_logger(), "[SubscriberExample]: initializing");
 
-    subscriber_ = this->create_subscription<std_msgs::msg::String>(
+    subscriber_ = this->create_subscription<interfaces::msg::Num>(
       "~/topic_subscriber", 10, std::bind(&SubscriberExample::callback, this, std::placeholders::_1));
   
     // | --------------------- finish the init -------------------- |
@@ -50,14 +51,15 @@ namespace pubsub_example
 
   /* callback_subscriber() //{ */
 
-  void SubscriberExample::callback(const std_msgs::msg::String::SharedPtr msg)
+  void SubscriberExample::callback( interfaces::msg::Num::SharedPtr msg)
   {
 
-    RCLCPP_INFO(get_logger(), "[SubscriberExample]: receiving string message '%s'", msg->data.c_str());
+   
+    msg->sum = msg->a + msg->b;
+   RCLCPP_INFO_STREAM(this->get_logger(), "I heard: '" << msg->sum << "'");
+
+
   }
-
-
-  
 
 }  // namespace pubsub_example
 

@@ -1,0 +1,5 @@
+/epoch/publisher_: # namespace and node name
+  ros__parameters:
+    a: 10
+    b: 20
+    sum: 0

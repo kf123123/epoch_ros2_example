@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)# 消息中依赖的包
 find_package(rosidl_default_generators REQUIRED)# 自定义消息必备
+# find_package(builtin_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Num.msg"
@@ -29,4 +30,5 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+ament_export_dependencies(rosidl_default_runtime)
 ament_package()

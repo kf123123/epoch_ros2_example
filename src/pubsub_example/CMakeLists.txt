@@ -9,9 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(interfaces REQUIRED)
 find_package(rclcpp_components REQUIRED) #组件
 
-#add_executable(publisher src/publisher_node.cpp)
+# add_executable(publisher src/publisher_.cpp)
 
 ## --------------------------------------------------------------
 ## |                       publisher                            |
@@ -27,6 +28,8 @@ ament_target_dependencies(publisher
   rclcpp
   rclcpp_components
   std_msgs
+  interfaces
+  
 )
 target_compile_definitions(publisher
   PRIVATE "pubsub_example_BUILDING_DLL")
@@ -49,6 +52,7 @@ ament_target_dependencies(subscriber
   rclcpp
   rclcpp_components
   std_msgs
+  interfaces
 )
 target_compile_definitions(subscriber
   PRIVATE "pubsub_example_BUILDING_DLL")
